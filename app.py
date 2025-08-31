@@ -13,10 +13,10 @@ st.markdown("<h1 style='text-align: center; color: #4CAF50;'>📰 Fake News Dete
 st.write("This tool uses a machine learning model to classify news articles as **Fake** or **Real**.")
 
 # Text input
-news_input = st.text_area("📝 Enter a News Article:", height=200, placeholder="Paste or type your news content here...")
+news_input = st.text_area(" Enter a News Article:", height=200, placeholder="Paste or type your news content here...")
 
 # Prediction
-if st.button("🔍 Check News"):
+if st.button(" Check News"):
     if news_input.strip():
         transform_input = vectorizer.transform([news_input])
         prediction = model.predict(transform_input)
@@ -30,4 +30,5 @@ if st.button("🔍 Check News"):
         st.warning("⚠️ Please enter some text to analyze.")
 
 st.markdown("---")
-st.markdown("<p style='text-align: center; color: gray;'>Built with ❤️ using Streamlit & Machine Learning</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; color: gray;'>Built with  using Streamlit & Machine Learning</p>", unsafe_allow_html=True)
+
